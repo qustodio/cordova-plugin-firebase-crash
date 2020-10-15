@@ -16,7 +16,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <engine name="cordova-ios" version=">=5.1.1"/>
     </engines>
 
-    <dependency id="cordova-plugin-firebase-analytics" url="https://github.com/didix21/cordova-plugin-firebase-analytics#86e11eb640e2f9425ce6c12ef74686169fbe0581"/>
+    <dependency id="cordova-plugin-firebase-analytics" url="https://github.com/didix21/cordova-plugin-firebase-analytics#eea52cbc5232e1b6bf7fca5838f37589734b3172"/>
 
     <js-module src="www/FirebaseCrash.js" name="FirebaseCrash">
         <merges target="cordova.plugins.firebase.crashlytics" />
@@ -25,7 +25,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <preference name="FIREBASE_CRASHLYTICS_COLLECTION_ENABLED" default="true" />
 
     <platform name="ios">
-        <preference name="IOS_FIREBASE_CRASHLYTICS_VERSION" default="~> 6.32.2"/>
+        <preference name="IOS_FIREBASE_CRASHLYTICS_VERSION" default="~> 6.33.0"/>
 
         <hook type="after_plugin_install" src="hooks/ios/after_plugin_install.js" />
         <hook type="before_plugin_uninstall" src="hooks/ios/before_plugin_uninstall.js" />
@@ -53,7 +53,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods>
-                <pod name="Firebase/Crashlytics" spec="6.32.2" />
+                <pod name="Firebase/Crashlytics" spec="6.33.0" />
             </pods>
         </podspec>
     </platform>
